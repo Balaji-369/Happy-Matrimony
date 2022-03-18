@@ -1,85 +1,133 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <header>
 
-
   <div class="container"></div>
   <a href="#"
-     class="logo">happy.com</a>
+     class="logo"> <strong>happy.com</strong></a>
   <nav>
     <ul>
       <li><a href="#"
-           routerlink="/">Login </a></li>
+           routerlink="/"><strong> Login</strong></a></li>
       <li><a href="#"
-           routerlink="/list">Register</a></li>
+           routerlink="/list"><strong>Register </strong></a></li>
     </ul>
   </nav>
-  <h1>HAPPY MATRIMONY</h1>
+  <h1 style="border:orange; border-width:5px; border-style:solid; ">HAPPY MATRIMONY</h1>
 </header>
+<div
+     style="background-image: linear-gradient(-111deg, rgb(109, 36, 81) 5%, rgb(149, 28, 34) 98%); height: auto; min-height: 450px; padding-bottom: 50px;">
+  <div class="reg-frm-head text--center">
+    <div class="container">
+      <img src="https://kostudio.in/wp-content/uploads/2020/12/Marriage-Couple-Photography-1.jpg"
+           alt="Snow"
+           style="width:100%;">
+      <div>...YOU CAN FIND A PERFECT MATCH HERE</div>
 
-<div class="container">
-  <img src="https://kostudio.in/wp-content/uploads/2020/12/Marriage-Couple-Photography-1.jpg"
-       alt="Snow"
-       style="width:100%;">
 
-  <div>...YOU CAN FIND A PERFECT MATCH HERE</div>
-</div>
-<div align="center">
-  <h2>Matches Within Your Community</h2>
-  <form>
-    <label for="person">Create Profile for:</label>
-    <select name="user">
-      <option value="Self">Self</option>
-      <option value="Son">Son</option>
-      <option value="Daughter">Daughter</option>
-      <option value="Brother">Brother</option>
-      <option value="Sister">Sister</option>
-      <option value="Friend">Friend</option>
-    </select>
-    <br>
-    <br>
-    <label for="language">Mother Tongue:</label>
-    <select name="user">
-      <option value="Tamil">Tamil</option>
-      <option value="Telugu">Telugu</option>
-      <option value="Arabic">Arabic</option>
-      <option value="kannadam">kannadam</option>
-      <option value="Malayalam">Malayalam</option>
-      <option value="Saurashtra">Saurashtra</option>
-    </select>
-    <br>
-    <br>
-    <label for="birthday">Date of Birth:</label>
-    <input type="date"
-           id="birthday"
-           name="birthday">
-    <br>
-    <br>
-    <label for="Community">Community:</label>
-    <select name="Community">
-      <option value="Nadar">Nadar</option>
-      <option value="Devar">Devar</option>
-      <option value="Vanniyar">Vanniyar</option>
-      <option value="Iyar">Iyar</option>
-      <option value="Brahman">Brahman</option>
-      <option value="Muthaliyar">Muthaliyar</option>
-    </select>
-    <br>
-    <br>
-    <button type="button"
-            class="btn btn-primary"
-            data-toggle="button"
-            aria-pressed="false"
-            autocomplete="off">
-      Lets Begin
-    </button>
-    <div style="font-size: 16px; text-transform: none;">Lets Begin</div>
-  </form>
-</div>
-<h3 align="center">About Us</h3>
-<p>Sangam is a matchmaking service created for parents who are looking for a life partner for their loved ones. Unlike
-  other Matrimonial services, we focus on providing detailed family and background information to help you take the next
-  step with confidence. With over 80+ community sites, you can find a match from your own community. Sangam is part of
-  Shaadi.com (sometimes mis-spelt as Shadi), the World's No. 1 Matchmaking service.</p>
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+      <h2>Matches Within Your Community</h2>
+
+      <form style="border: rgb(10, 216, 21); border-width: 3px; border-style: groove; color: black;">
+        <label for="person">Create Profile for: </label>
+        <select name="user">
+          <option value="Self">Self</option>
+          <option value="Son">Son</option>
+          <option value="Daughter">Daughter</option>
+          <option value="Brother">Brother</option>
+          <option value="Sister">Sister</option>
+          <option value="Friend">Friend</option>
+        </select>
+        <br>
+        <br>
+        <label for="language">Mother Tongue: </label>
+        <select name="user">
+          <option value="Tamil">Tamil</option>
+          <option value="Telugu">Telugu</option>
+          <option value="Arabic">Arabic</option>
+          <option value="kannadam">kannadam</option>
+          <option value="Malayalam">Malayalam</option>
+          <option value="Saurashtra">Saurashtra</option>
+        </select>
+
+        <br>
+        <br>
+        <label for="birthday">Date of Birth: </label>
+        <input type="date"
+               id="birthday"
+               name="birthday">
+        <br>
+        <br>
+        <label for="Community">Community: </label>
+        <select name="Community">
+          <option value="Nadar">Nadar</option>
+          <option value="Devar">Devar</option>
+          <option value="Vanniyar">Vanniyar</option>
+          <option value="Iyar">Iyar</option>
+          <option value="Brahman">Brahman</option>
+          <option value="Muthaliyar">Muthaliyar</option>
+        </select>
+        <br>
+        <br>
+        <button type="button"
+                class="btn btn-primary"
+                data-toggle="button"
+                aria-pressed="false"
+                autocomplete="off">
+          Lets Begin
+        </button>
+      </form>
+    </div>
+    <style>
+      input[type=text],
+      select {
+        width: 15%;
+        font-size: large;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 17px;
+        box-sizing: border-box;
+      }
+
+      button[type=button] {
+        width: 30%;
+        font-size: larger;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button[type=button]:hover {
+        background-color: #45a049;
+      }
+
+      form {
+
+        width: 60%;
+        margin: auto;
+
+        border-radius: 800px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+    </style>
+
+
+    <h3 align="center"> <u>About Us</u></h3>
+    <p align="center">Sangam is a matchmaking service created for parents who are looking for a life partner for their
+      loved
+      ones. Unlike
+      other Matrimonial services, we focus on providing detailed family and background information to help you take
+      the
+      next
+      step with confidence. With over 80+ community sites, you can find a match from your own community. Sangam is
+      part
+      of
+      Shaadi.com (sometimes mis-spelt as Shadi), the World's No. 1 Matchmaking service.</p>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
